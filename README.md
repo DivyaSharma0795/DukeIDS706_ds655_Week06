@@ -19,6 +19,9 @@ For the ETL-Query lab:
 * Fork this project and get it to run
 * Make the query more useful and not a giant mess that prints to screen
 * Convert the main.py into a command-line tool that lets you run each step independantly
+    -> python main.py --step 1 to extract data
+    -> python main.py --step 2 to load data
+    -> python main.py --step 3 to query data
 * Fork this project and do the same thing for a new dataset you choose
 * Make sure your project passes lint/tests and has a built badge
 * Include an architectural diagram showing how the project works
