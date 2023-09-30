@@ -5,13 +5,16 @@ food dataset
 """
 import requests
 
-def extract(url="https://raw.githubusercontent.com/Barabasi-Lab/GroceryDB/main/data/GroceryDB_IgFPro.csv", 
-            file_path="data/GroceryDB_IgFPro.csv"):
-    """"Extract a url to a file path"""
+
+def extract(
+    url="https://raw.githubusercontent.com/Barabasi-Lab/GroceryDB/main/data/GroceryDB_IgFPro.csv",
+    file_path="data/GroceryDB_IgFPro.csv",
+):
+    """ "Extract a url to a file path"""
     with requests.get(url) as r:
-        with open(file_path, 'wb') as f:
+        with open(file_path, "wb") as f:
             f.write(r.content)
     return file_path
 
 
-
+extract()
