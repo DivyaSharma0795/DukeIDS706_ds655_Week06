@@ -1,5 +1,7 @@
 ## SQLite Lab
 
+Status badge for 3 versions of Python : 3.7, 3.8, and 3.9: [![CI](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/actions/workflows/cicd.yml)
+
 ![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
 
 
