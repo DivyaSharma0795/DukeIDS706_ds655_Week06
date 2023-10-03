@@ -18,6 +18,7 @@ For the ETL-Query lab:
 
 * Fork this project and get it to run
 * Make the query more useful and not a giant mess that prints to screen
+    -> The query now prints only the top 5 rows of the table
 * Convert the main.py into a command-line tool that lets you run each step independantly
     -> python main.py --step 1 to extract data
     -> python main.py --step 2 to load data
