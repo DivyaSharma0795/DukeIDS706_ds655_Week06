@@ -1,5 +1,7 @@
 """
-Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well # noqa: E501
+Extract a dataset from a URL 
+like Kaggle or data.gov. 
+JSON or CSV formats tend to work well # noqa: E501
 food dataset
 """
 import requests
