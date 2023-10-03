@@ -3,8 +3,10 @@ Test goes here
 
 """
 
-from mylib.calculator import add
+from mylib.extract import extract
+from mylib.transform_load import load
+from mylib.query import query
 
 
-def test_add():
-    assert add(1, 2) == 3
+def test_etl():
+    assert (query(load(extract()))) == "Success"
