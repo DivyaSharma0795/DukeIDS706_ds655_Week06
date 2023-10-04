@@ -16,5 +16,5 @@ def query(db="GroceryDB.db"):
     return "Success"
 
 
-query()
-query("Iris_Data.db")
+# query()
+# query("Iris_Data.db")

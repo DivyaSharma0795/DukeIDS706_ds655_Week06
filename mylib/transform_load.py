@@ -50,5 +50,5 @@ def load(dataset="./data/GroceryDB.csv"):
     return dbname + ".db"
 
 
-load("./data/Iris_Data.csv")
-load()
+# load("./data/Iris_Data.csv")
+# load()

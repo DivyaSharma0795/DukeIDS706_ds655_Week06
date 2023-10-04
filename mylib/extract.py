@@ -24,7 +24,7 @@ def extract(
     return file_path
 
 
-extract()
+# extract()
 # extract(
 #     "https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv",  # noqa: E501
 #     "data/Iris_Data.csv",
