@@ -19,19 +19,21 @@ from pathlib import Path
 def load(dataset="./data/GroceryDB.csv"):
     """ "Transforms and Loads data into the local SQLite3 database"""
 
-    # prints the full working directory and path
-    print(os.getcwd())
+    # print(os.getcwd())
     headers = ""
+    #   Reading the provided file [default is GroceryDB] into 'payload'
     payload = csv.reader(open(dataset, newline=""), delimiter=",")
     for row in payload:
         headers = ", ".join(row)
         break
     dbname = Path(dataset).stem
-
+    # dbname is the name of the database
     conn = sqlite3.connect(dbname + ".db")
     c = conn.cursor()
     c.execute("DROP TABLE IF EXISTS " + dbname)
+    print("Table " + dbname + " has been dropped if it existed.")
     c.execute("CREATE TABLE " + dbname + "(" + headers.replace(".", "_") + ")")
+    print("Table " + dbname + " has been created.")
     # insert
     count_columns = 1
     for char in headers:
@@ -43,12 +45,15 @@ def load(dataset="./data/GroceryDB.csv"):
         payload,
     )
     print(
-        str(count_columns) + " columns have been added to the file: " + dbname + ".db"
+        str(count_columns) + " columns have been added to the table: " + dbname + ".db"
     )
     conn.commit()
     conn.close()
     return dbname + ".db"
 
+
+if __name__ == "__main__":
+    load()
 
 # load("./data/Iris_Data.csv")
 # load()
