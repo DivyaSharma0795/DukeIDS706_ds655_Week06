@@ -7,7 +7,7 @@ def db_update(db="GroceryDB.db", colname="id"):
     conn = sqlite3.connect(db)
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM " + tablename)
-    r_all = cursor.fetchall()
+    # r_all = cursor.fetchall()
     print("Before update: ")
     query(db)
     cursor.execute("UPDATE " + tablename + " SET " + colname + "=" + colname + "+ 1")

@@ -12,7 +12,8 @@ semantic_tree_node # noqa: E501
 """
 import sqlite3
 import csv
-import os
+
+# import os
 from pathlib import Path
 
 # load the csv file and insert into a new sqlite3 database
