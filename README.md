@@ -20,12 +20,22 @@ For the ETL-Query lab:
 
 * Fork this project and get it to run
 * Make the query more useful and not a giant mess that prints to screen
+    * -> Modified query to publish top 5 rows of the dataset
+
 * Convert the main.py into a command-line tool that lets you run each step independantly
-    -> python main.py --step 1 to extract data
-    -> python main.py --step 2 to load data
-    -> python main.py --step 3 to query data
+
+    * -> python main.py --step 1 to extract data
+    * -> python main.py --step 2 to load data
+    * -> python main.py --step 3 to query data
+
 * Fork this project and do the same thing for a new dataset you choose
+
+    * -> Added [Iris dataset](https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv) to the project
+    * -> the `test_main.py` file has been updated to test the new dataset
+
 * Make sure your project passes lint/tests and has a built badge
+    * -> Added a badge for the 3 versions of Python : 3.7, 3.8, and 3.9
+
 * Include an architectural diagram showing how the project works
 
 #### Reflection Questions

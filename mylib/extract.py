@@ -8,7 +8,7 @@ import requests
 
 
 def extract(
-    url="https://raw.githubusercontent.com/Barabasi-Lab/GroceryDB/main/data/GroceryDB_IgFPro.csv", # noqa: E501
+    url="https://raw.githubusercontent.com/Barabasi-Lab/GroceryDB/main/data/GroceryDB_IgFPro.csv",  # noqa: E501
     file_path="data/GroceryDB.csv",
 ):
     """ "Extract a url to a file path"""
@@ -16,3 +16,9 @@ def extract(
         with open(file_path, "wb") as f:
             f.write(r.content)
     return file_path
+
+
+extract(
+    "https://gist.githubusercontent.com/netj/8836201/raw/6f9306ad21398ea43cba4f7d537619d0e07d5ae3/iris.csv",
+    "data/Iris_Data.csv",
+)

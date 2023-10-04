@@ -1,4 +1,4 @@
-,general name,count_products,ingred_FPro,avg_FPro_products,avg_distance_root,ingred_normalization_term,semantic_tree_name,semantic_tree_node
+id,general name,count_products,ingred_FPro,avg_FPro_products,avg_distance_root,ingred_normalization_term,semantic_tree_name,semantic_tree_node
 0,arabica coffee,21,0.18903204038025467,0.2754401549508692,2.0476190476190474,15.16666666666667,,
 1,grape tomatoes,18,0.21119429773632484,0.4212998456790123,3.111111111111111,10.594047619047616,,
 2,cherry tomatoes,11,0.23032828967178565,0.31386826599326595,2.1818181818181817,8.785714285714283,,
