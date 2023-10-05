@@ -2,7 +2,7 @@
 
 Status badge for 3 versions of Python : 3.7, 3.8, and 3.9: [![CI](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/actions/workflows/cicd.yml)
 
-![image]()
+![image](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/blob/main/data/Repo_Architecture.drawio.png)
 
 
 
@@ -39,9 +39,10 @@ For the ETL-Query lab:
     * -> the `test_main.py` file has been updated to test the new dataset
 
 * Make sure your project passes lint/tests and has a built badge
-    * -> Added a badge for the 3 versions of Python : 3.7, 3.8, and 3.9
+    * -> Added a status badge for the workflow to test on 3 versions of Python : 3.7, 3.8, and 3.9
 
 * Include an architectural diagram showing how the project works
+    * -> Added
 
 #### Reflection Questions
 
