@@ -10,7 +10,11 @@ def Iris_query(db="Iris_Data.db"):
     conn = sqlite3.connect(db)
     cursor = conn.cursor()
     # Getting top 5 rows of the table
-    cursor.execute("SELECT variety, avg(sepal_length) as avg_sepal_length, avg(sepal_width) as avg_sepal_width FROM " + tablename + " GROUP BY 1")
+    cursor.execute("SELECT \
+            variety, \
+            avg(sepal_length) as avg_sepal_length, \
+            avg(sepal_width) as avg_sepal_width \
+        FROM " + tablename + " GROUP BY 1")
     # print("Top 5 rows of the " + tablename + " table:")
     r_all = cursor.fetchall()
     x = PrettyTable()
