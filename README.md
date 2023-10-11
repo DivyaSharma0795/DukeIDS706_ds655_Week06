@@ -32,6 +32,7 @@ For the ETL-Query lab:
     * -> python main.py --step 1 to extract data
     * -> python main.py --step 2 to load data
     * -> python main.py --step 3 to query data
+    * -> python main.py --step 4 for advanced query
 
 * Fork this project and do the same thing for a new dataset you choose
 
@@ -56,13 +57,4 @@ For the ETL-Query lab:
     * I used Github Copilot, it is very good at predicting the next line of code, but it is not very good at predicting the next few lines of code. It is also not very good at predicting the correct variable names, however it is very good at predicting the correct function names
 * If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?
     * I wanted to add more analyses to this lab, however I'm not sure how to implement such generic, one-fit-for-all analyses in SQL. With each table there are different column names and data types and there is no easy way to perform a generic EDA without manual intervention
-
-##### Challenge Exercises
-
-* Add more transformations to the data before loading it into SQLite. Ideas: join with another dataset, aggregate by categories, normalize columns.
-* Write a query to find correlated fields in the data. Print the query results nicely formatted.
-* Create a second table in the SQLite database and write a join query with the two tables.
-* Build a simple Flask web app that runs queries on demand and displays results.
-* Containerize the application using Docker so the database and queries can be portable
-
 
