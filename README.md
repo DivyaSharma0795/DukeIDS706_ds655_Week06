@@ -1,4 +1,4 @@
-## SQLite Lab
+## Week 06 Mini Project - Advanced SQL using SQLite Lab
 
 Status badge for 3 versions of Python : 3.7, 3.8, and 3.9: [![CI](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/DukeIDS706_ds655_Week05_sqlite/actions/workflows/cicd.yml)
 
