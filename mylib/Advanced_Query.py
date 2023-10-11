@@ -12,14 +12,12 @@ def Iris_query(db="Iris_Data.db"):
     # Getting top 5 rows of the table
     cursor.execute("SELECT variety, avg(sepal_length) as avg_sepal_length, avg(sepal_width) as avg_sepal_width FROM " + tablename + " GROUP BY 1")
     # print("Top 5 rows of the " + tablename + " table:")
-    # print([i[0] for i in cursor.description])  # Printing Headers
     r_all = cursor.fetchall()
     x = PrettyTable()
     x.field_names = [i[0] for i in cursor.description]
     for r in r_all:
         x.add_row(r)
     print(x)
-    # print(cursor.fetchall())  # Printing query output
     conn.close()
     return "Success"
 

@@ -5,6 +5,7 @@ ETL-Query script
 from mylib.extract import extract
 from mylib.transform_load import load
 from mylib.query import query
+from mylib.Advanced_Query import Iris_query
 import argparse
 
 parser = argparse.ArgumentParser(description="Extract, Transform, or Load data")
@@ -26,6 +27,11 @@ elif args.step == 2:
 elif args.step == 3:
     print("Querying data...")
     query()
+
+# Query
+elif args.step == 4:
+    print("Running Group by...")
+    Iris_query()
 
 else:
     print("Invalid step number")
